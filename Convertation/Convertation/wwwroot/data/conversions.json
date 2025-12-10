@@ -1,0 +1,128 @@
+[
+  {
+    "Id": 1,
+    "FromCurrency": "RUB",
+    "ToCurrency": "USD",
+    "Amount": 50,
+    "Result": 0.512821,
+    "Timestamp": "2025-10-28T17:18:15.7480693Z",
+    "ExchangeRate": 0.010256
+  },
+  {
+    "Id": 2,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 50,
+    "Result": 4875.0,
+    "Timestamp": "2025-10-28T17:19:01.4447155Z",
+    "ExchangeRate": 97.5
+  },
+  {
+    "Id": 3,
+    "FromCurrency": "RUB",
+    "ToCurrency": "EUR",
+    "Amount": 77,
+    "Result": 0.724638,
+    "Timestamp": "2025-10-28T17:57:15.1939935Z",
+    "ExchangeRate": 0.009411
+  },
+  {
+    "Id": 4,
+    "FromCurrency": "RUB",
+    "ToCurrency": "JPY",
+    "Amount": 33,
+    "Result": 50.769231,
+    "Timestamp": "2025-10-28T18:28:40.0002774Z",
+    "ExchangeRate": 1.538462
+  },
+  {
+    "Id": 5,
+    "FromCurrency": "RUB",
+    "ToCurrency": "USD",
+    "Amount": 12,
+    "Result": 0.123077,
+    "Timestamp": "2025-11-11T22:17:59.8134706Z",
+    "ExchangeRate": 0.010256
+  },
+  {
+    "Id": 6,
+    "FromCurrency": "RUB",
+    "ToCurrency": "USD",
+    "Amount": 12,
+    "Result": 0.123077,
+    "Timestamp": "2025-11-16T22:07:01.0570865Z",
+    "ExchangeRate": 0.010256
+  },
+  {
+    "Id": 7,
+    "FromCurrency": "RUB",
+    "ToCurrency": "USD",
+    "Amount": 12,
+    "Result": 0.132597,
+    "Timestamp": "2025-11-30T18:22:25.4241503Z",
+    "ExchangeRate": 0.011050
+  },
+  {
+    "Id": 8,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 12,
+    "Result": 1086.0,
+    "Timestamp": "2025-11-30T18:23:37.6880704Z",
+    "ExchangeRate": 90.5
+  },
+  {
+    "Id": 9,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 1,
+    "Result": 90.5,
+    "Timestamp": "2025-11-30T18:41:24.9015748Z",
+    "ExchangeRate": 90.5
+  },
+  {
+    "Id": 10,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 100,
+    "Result": 9050.0,
+    "Timestamp": "2025-11-30T18:50:31.275948Z",
+    "ExchangeRate": 90.5
+  },
+  {
+    "Id": 11,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 10,
+    "Result": 905.0,
+    "Timestamp": "2025-12-05T13:58:04.1396236Z",
+    "ExchangeRate": 90.5
+  },
+  {
+    "Id": 12,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 99,
+    "Result": 8959.5,
+    "Timestamp": "2025-12-09T19:29:15.3122807Z",
+    "ExchangeRate": 90.5
+  },
+  {
+    "Id": 13,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 100,
+    "Result": 9050.0,
+    "Timestamp": "2025-12-10T11:14:27.048966Z",
+    "ExchangeRate": 90.5
+  },
+  {
+    "Id": 14,
+    "FromCurrency": "USD",
+    "ToCurrency": "RUB",
+    "Amount": 97,
+    "Result": 8778.5,
+    "Timestamp": "2025-12-10T11:24:26.7242654Z",
+    "ExchangeRate": 90.5
+  }
+]

@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 900px;
+  transition: transform 0.2s;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  color: #4a0e82;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.updated {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: normal;
+}
+
+/* Конвертер */
+.converter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .converter-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.converter-grid label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.converter-grid input,
+.converter-grid select {
+  width: 100%;
+  padding: 0.9rem;
+  border: 2px solid #ddd;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.converter-grid input:focus,
+.converter-grid select:focus {
+  outline: none;
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2);
+}
+
+.result-box {
+  grid-column: span 2;
+}
+
+.result-display {
+  padding: 1rem;
+  background: #f8f5ff;
+  border: 2px solid #ddd;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4a0e82;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Кнопки */
+.btn {
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn.primary {
+  background: #764ba2;
+  color: white;
+}
+
+.btn.primary:hover:not(:disabled) {
+  background: #5a2d91;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: #e0d6ff;
+  color: #4a0e82;
+}
+
+.btn.secondary:hover:not(:disabled) {
+  background: #d0b8ff;
+}
+
+.btn.large {
+  padding: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Действия */
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Курсы */
+.rates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.rate-item {
+  background: #f8f5ff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  border: 1px solid #e0d6ff;
+}
+
+.currency-code {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #4a0e82;
+}
+
+.rate-value {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.rate-label {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* История */
+.history-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  background: #f9f7ff;
+  border-radius: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #764ba2;
+}
+
+.text-indigo {
+  color: #764ba2;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Сообщения */
+.success-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #eefbe9;
+  border: 1px solid #a3e683;
+  border-radius: 0.7rem;
+  text-align: center;
+  color: #2e7d32;
+}
+
+.error-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-weight: 600;
+  z-index: 1000;
+}
